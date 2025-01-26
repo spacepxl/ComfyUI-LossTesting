@@ -37,7 +37,7 @@ def common_ksampler(model, seed, steps, scheduler, positive, latent, denoise=1.0
     loss = F.mse_loss(samples, latent_image, reduction="none").mean(dim=(1,2,3))
     return loss
 
-class MeasureLoss:
+class MeasureTimestepLoss:
     @classmethod
     def INPUT_TYPES(s):
         return {
