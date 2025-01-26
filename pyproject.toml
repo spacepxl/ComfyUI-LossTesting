@@ -1,0 +1,15 @@
+[project]
+name = "losstesting"
+description = "Basic utility for testing diffusion model loss across the timestep schedule. Should work with any native models that use ksampler. This could be used for comparing models, testing captions on an image, etc."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["matplotlib"]
+
+[project.urls]
+Repository = "https://github.com/spacepxl/ComfyUI-LossTesting"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-LossTesting"
+Icon = ""
